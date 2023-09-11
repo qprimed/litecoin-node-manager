@@ -5,32 +5,32 @@
   class Config {
 
     /* 
-    Bitcoin Node Manager (BNM) password for login. You should additionally change the name of
-    BNM folder to something unique, if accessible via the web. 
+    Litecoin Node Manager (LNM) password for login. You should additionally change the name of
+    LNM folder to something unique, if accessible via the web. 
     Leave empty to disable it (only do this on a local setup that can't be reached from the outside).
      */
     const PASSWORD = "LOGIN-PASSWORD";
     /* 
-    IP that can access BNM:
-      "": any IP can access BNM
-      "localhost": only localhost (IPv4/v6) can access BNM)
-      "84.12.32.297": localhost and the specific IP (e.g. 84.12.32.297) can access BNM
+    IP that can access LNM:
+      "": any IP can access LNM
+      "localhost": only localhost (IPv4/v6) can access LNM)
+      "84.12.32.297": localhost and the specific IP (e.g. 84.12.32.297) can access LNM
     */
     const ACCESS_IP = "";
 
     /*
-    IP of the Bitcoin Core RPC Server, usually localhost. Be careful with remote servers. The connection is not encrypted by default.
+    IP of the Litecoin Core RPC Server, usually localhost. Be careful with remote servers. The connection is not encrypted by default.
     DOCKER:
       -> Windows/Mac: host.docker.internal
       -> Linux: 172.17.0.1 (Don't forget to open the port since docker uses by default a different network interface: 
         'sudo ufw allow in on docker0 from 172.17.0.0/16 to any port 8332')
     */
     const RPC_IP = "127.0.0.1";
-    // RPC port, usually 8332 if not changed in bitcoin.conf
-    const RPC_PORT = "8332";
-    // RPC username / rpcauth specified in bitcoin.conf
+    // RPC port, usually 9332 if not changed in Litecoin.conf
+    const RPC_PORT = "9332";
+    // RPC username / rpcauth specified in Litecoin.conf
     const RPC_USER = "USERNAME";
-    // RPC password / rpcauth specified in bitcoin.conf
+    // RPC password / rpcauth specified in Litecoin.conf
     const RPC_PASSWORD = "PASSWORD";
 
     /*
@@ -50,7 +50,7 @@
     const DISPLAY_FORKS = 25;
 
     /* 
-    You can connect (curl) to the bitcoin core rpc through a proxy. This not relevant for most setups.
+    You can connect (curl) to the Litecoin core rpc through a proxy. This not relevant for most setups.
     Only change this if you know what you are doing. E.g "CURLPROXY_SOCKS5" and "127.0.0.1:9050".
     */
     const PROXY_TYPE = "";

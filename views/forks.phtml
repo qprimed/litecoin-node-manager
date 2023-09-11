@@ -64,7 +64,7 @@
 						  <th>Length</th>
 						  <th>Size <span style="font-weight:normal;">(MB)</span></th>
 						  <th>Voting</th>
-						  <th style="min-width:60px;">Info</th>
+
 					  </thead>
 						</tr>
 
@@ -87,19 +87,7 @@
 										}	
 									} ?>
 									</td>										
-									<td>																						
-										<div class="btn-group pull-left" style="padding:5px 0 3px 7px; margin-bottom:0px">
-											<button type="button" class="btn btn-default btn-xs">Details</button>
-											<button type="button" class="btn btn-default dropdown-toggle btn-xs" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-												<span class="caret"></span>
-												<span class="sr-only">Toggle Dropdown</span>
-										</button>
-										<ul class="dropdown-menu">
-										  <li><a href="https://bitcoin.jonasschnelli.ch/explorer/block/<?= $block["hash"] ?>" target="_blank"><i class="fa fa-globe fa-lg" style="color:lightblue"></i> Dumb Block Explorer</a></li>
-											<li><a href="https://blockchair.com/search?q=<?= $block["hash"] ?>" target="_blank"><i class="fa fa-globe fa-lg" style="color:lightblue"></i> Blockchair</a></li>
-										</ul>
-										</div>										   
-									</td>										   
+																		   
 								</tr>
 						<?php } ?>						
 					  </tbody>

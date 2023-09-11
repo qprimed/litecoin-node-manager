@@ -88,8 +88,8 @@ class jsonRPCClient
             CURLOPT_HTTPHEADER     => array('Content-type: application/json'),
             CURLOPT_POST           => true,
             CURLOPT_POSTFIELDS     => $request,
-            CURLOPT_CONNECTTIMEOUT => 2,
-            CURLOPT_TIMEOUT        => 10
+            CURLOPT_CONNECTTIMEOUT => 20,
+            CURLOPT_TIMEOUT        => 100
         );
 
         if(defined('App\Config::PROXY') && !empty(Config::PROXY) && defined('App\Config::PROXY_TYPE') && !empty(Config::PROXY_TYPE)) {
