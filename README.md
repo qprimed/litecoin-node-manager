@@ -1,4 +1,4 @@
-# Bitcoin Node Manager
+# Litecoin Node Manager
 
 ![](https://github.com/MrLinnea/litecoin-node-manager/blob/master/LNM.JPG)
 
